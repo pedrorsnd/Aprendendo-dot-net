@@ -52,7 +52,7 @@
       </thead>
       <tbody>
         <tr *ngFor="let aluno of alunos">
-          <td><button class="text-dark btn btn-sm btn-warning">Detalhe</button></td>
+          <td><button (click)="alunoSelect(aluno)" class="text-dark btn btn-sm btn-warning">Detalhe</button></td>
           <td scope="row">{{aluno.id}}</td>
           
           <td>{{aluno.nome}}</td>
